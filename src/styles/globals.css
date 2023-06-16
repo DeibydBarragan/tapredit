@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-shape{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-wave {
+  background-image: url("/background/wave.svg");
+  @apply bg-shape
+}

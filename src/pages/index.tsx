@@ -1,9 +1,11 @@
+import Navbar from "@/components/containers/navbar/Navbar";
+import Hero from "@/components/sections/Hero";
+
 export default function Home() {
   return (
     <main>
-      <button className="btn btn-neutral">
-        Hello world
-      </button>
+      <Navbar />
+      <Hero />
     </main>
   )
 }
