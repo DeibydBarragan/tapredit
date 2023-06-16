@@ -11,3 +11,11 @@
   background-image: url("/background/wave.svg");
   @apply bg-shape
 }
+
+h1{
+  @apply text-5xl font-bold
+}
+
+h2{
+  @apply text-4xl font-bold
+}

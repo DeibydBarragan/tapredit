@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Section from '../containers/section/Section'
+import Section from '../../containers/section/Section'
 
 type Props = {}
 
@@ -11,7 +11,7 @@ export default function Hero({}: Props) {
         <div className="hero-content flex-col lg:flex-row">
           <Image src="/photos/hero.webp" alt="hero" width={500} height={500} />
           <div className='lg:text-right flex flex-col gap-4 lg:items-end'>
-            <h1 className="text-5xl font-bold text-neutral">TAPREDIT</h1>
+            <h1 className="text-neutral">TAPREDIT</h1>
             <h2 className="text-4xl font-bold">
               Una tabla periódica creativa e innovadora
             </h2>
