@@ -16,5 +16,9 @@ export const navLinks: navLink[] = [
   {
     to: 'data',
     title: 'Ficha técnica',
+  },
+  {
+    to: 'gallery',
+    title: 'Evidencias',
   }
 ]

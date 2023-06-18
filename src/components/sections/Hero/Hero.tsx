@@ -10,7 +10,7 @@ type Props = {}
 export default function Hero({}: Props) {
   return (
     <Section className='bg-wave'>
-      <div className="hero sm:w-11/12 md:w-9/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 3xl:w-7/12">
+      <div className="hero sm:w-11/12 md:w-9/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 3xl:w-7/12" id='hero'>
         <div className="hero-content flex-col lg:flex-row">
           <Image src="/photos/hero.webp" alt="hero" width={500} height={500} />
           <div className='lg:text-right flex flex-col gap-4 lg:items-end'>

@@ -18,9 +18,9 @@ export default function Gallery({}: Props) {
         <motion.h2 id='gallery'
           {...fadeIn}
           transition={{ delay: 0.3}}
-          className='mb-6'
+          className='mb-8'
         >
-          Galería
+          Evidencias
         </motion.h2>
         <Carousel 
           images={photos}
