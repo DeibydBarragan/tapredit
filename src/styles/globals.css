@@ -12,10 +12,48 @@
   @apply bg-shape
 }
 
+.bg-wave-middle {
+  background-image: url("/background/wave2.svg");
+  @apply bg-shape
+}
+
+.bg-circles {
+  background-image: url("/background/circles.svg");
+  @apply bg-shape
+}
+
+.bg-moon {
+  background-image: url("/background/moon.svg");
+  position: relative; /* Asegúrate de que el contenedor tenga una posición relativa */
+  background-position: center;
+}
+
+.bg-stacked {
+  background-image: url("/background/stacked.svg");
+  @apply bg-shape
+}
+
+.bg-moon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/background/moon.svg");
+  background-position: center;
+  filter: blur(5px); /* Ajusta el valor de desenfoque según tus preferencias */
+  z-index: -1; /* Asegúrate de que el pseudoelemento esté detrás del contenido principal */
+}
+
 h1{
   @apply text-5xl font-bold
 }
 
 h2{
   @apply text-4xl font-bold
+}
+
+h3{
+  @apply text-3xl font-bold
 }

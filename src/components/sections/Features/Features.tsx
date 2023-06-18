@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Features({}: Props) {
   return (
-    <section className='bg-primary flex justify-center'>
+    <section className='flex justify-center bg-gradient-to-r from-primary to-secondary'>
       <div className='flex flex-col gap-8 py-8 px-5'>
         <h2 className='text-white'>
           Características

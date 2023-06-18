@@ -2,7 +2,7 @@ import { navLink } from "./interfaces";
 
 export const navLinks: navLink[] = [
   {
-    to: 'information',
+    to: 'description',
     title: '¿Qué es?',
   },
   {

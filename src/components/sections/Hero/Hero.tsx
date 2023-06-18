@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Section from '../../containers/section/Section'
+import { Link } from 'react-scroll'
 
 type Props = {}
 
@@ -15,10 +16,18 @@ export default function Hero({}: Props) {
             <h2 className="text-4xl font-bold">
               Una tabla periódica creativa e innovadora
             </h2>
-            <p>
+            <p className='font-semibold'>
               Descubre nuestra innovadora tabla periódica didáctica en forma de maletín. Con cubos de polipropileno recuperado y fichas informativas, es ideal para docentes y estudiantes. Los cubos y su información son removibles, permitiendo agregar elementos reales y desarrollar habilidades. ¡Explora la química de manera interactiva y práctica!
             </p>
-            <button className="btn btn-neutral px-10">Más información</button>
+            <Link
+              className="btn btn-neutral px-10"
+              to="description"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
+              Más información
+            </Link>
           </div>
         </div>
       </div>
