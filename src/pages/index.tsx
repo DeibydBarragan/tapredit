@@ -7,10 +7,14 @@ import Gallery from "@/components/sections/gallery/Gallery";
 import Process from "@/components/sections/process/Process";
 import ProductData from "@/components/sections/productData/ProductData";
 import Who from "@/components/sections/who/Who";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className="relative">
+      <Head>
+        <title>TAPREDIT | Tabla periódica didáctica en forma de maletín</title>
+      </Head>
       <Navbar />
       <Hero />
       <Description />
