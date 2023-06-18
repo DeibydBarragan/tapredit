@@ -9,7 +9,7 @@ type Props = {
 
 export default function Section({children, className, id}: Props) {
   const containerClasses = classNames(
-    "flex flex-col items-center justify-center w-full min-h-screen mb-10 pb-10",
+    "flex flex-col items-center justify-center w-full min-h-screen mb-10 pb-10 overflow-hidden",
     className
   )
 

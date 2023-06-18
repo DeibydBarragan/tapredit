@@ -47,6 +47,7 @@ export default function Navbar({}: Props) {
         <div className="relative">
           <label className="text-gray-600 m-1"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label='Abrir menú'
           >
             {
               isOpen ? <GrClose size={30} /> : <RxHamburgerMenu size={30} />

@@ -1,7 +1,8 @@
 import Section from '@/components/containers/section/Section'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import ReactPlayer from 'react-player'
-import { AiOutlinePlayCircle } from 'react-icons/ai'
+import { motion } from 'framer-motion';
+import { fadeIn, flyLeft, flyRight } from '@/anim/animations';
 
 type Props = {}
 
@@ -45,13 +46,21 @@ export default function Who({}: Props) {
   return (
     <Section>
       <div className='sm:w-11/12 lg:w-10/12 xl:w-10/12 2xl:w-8/12 py-5 px-5 mt-10'>
-        <h2 id='who'>¿Quiénes somos?</h2>
+        <motion.h2 id='who'
+          {...fadeIn}
+          transition={{ delay: 0.3}}
+        >
+          ¿Quiénes somos?
+        </motion.h2>
         <div className='flex flex-col md:flex-row mt-10 gap-8'>
-            <div className='md:w-6/12'>
+            <motion.div className='md:w-6/12'
+              {...flyRight}
+              transition={{ delay: 0.6}}
+            >
               <p className="font-semibold text-lg">
               Somos aprendices del Colegio bilingüe Domingo Savio con doble titulación, articulación SENA en media académica, en el programa Recuperación de residuos sólidos plásticos en la ciudad de Bogotá D.C. Poseedoras de una acreditación de un segundo idioma (inglés). Nosotras somos personas creativas altamente productivas que están enfocadas en la innovación constante de ideas. Nuestra habilidad en diseño de proyectos, que hemos desarrollado durante nuestros años en la institución educativa nos permite crear de manera exitosa productos que son fácilmente exportables a diferentes ambientes. Nos destacamos por ser personas muy responsables y aplicadas en los objetivos planteados, además de presentar facilidad en trabajos de tipo co-worker.
               </p>
-            </div>
+            </motion.div>
             <div
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
