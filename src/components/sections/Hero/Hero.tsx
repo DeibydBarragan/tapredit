@@ -11,33 +11,36 @@ export default function Hero({}: Props) {
   return (
     <Section className='bg-wave'>
       <div className="hero sm:w-11/12 md:w-9/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 3xl:w-7/12" id='hero'>
-        <div className="hero-content flex-col lg:flex-row">
+        <motion.div className="hero-content flex-col lg:flex-row"
+          {...fadeIn}
+          transition={{ delay: 0.2}}
+        >
           <Image src="/photos/hero.webp" alt="hero" width={500} height={500} />
           <div className='lg:text-right flex flex-col gap-4 lg:items-end'>
             <motion.h1 
               className="text-neutral"
-              transition={{ delay: 0.2}}
+              transition={{ delay: 0.4}}
               {...flyUp}
             >
               TAPREDIT
             </motion.h1>
             <motion.h2 
               className="text-4xl font-bold"
-              transition={{ delay: 0.4}}
+              transition={{ delay: 0.6}}
               {...flyUp}
             >
               Una tabla periódica creativa e innovadora
             </motion.h2>
             <motion.p
               className='font-semibold'
-              transition={{ delay: 0.6}}
+              transition={{ delay: 0.8}}
               {...flyUp}
             >
               Descubre nuestra innovadora tabla periódica didáctica en forma de maletín. Con cubos de polipropileno recuperado y fichas informativas, es ideal para docentes y estudiantes. Los cubos y su información son removibles, permitiendo agregar elementos reales y desarrollar habilidades. ¡Explora la química de manera interactiva y práctica!
             </motion.p>
             <motion.div
               {...fadeIn}
-              transition={{ delay: 0.8}}
+              transition={{ delay: 1}}
             >
               <Link
                 className="btn btn-neutral px-10"
@@ -50,7 +53,7 @@ export default function Hero({}: Props) {
               </Link>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   )
