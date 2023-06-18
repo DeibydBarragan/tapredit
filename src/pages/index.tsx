@@ -1,6 +1,6 @@
 import Navbar from "@/components/containers/navbar/Navbar";
-import Description from "@/components/sections/description/Description";
-import Features from "@/components/sections/features/Features";
+import Description from "@/components/sections/Description/Description";
+import Features from "@/components/sections/Features/Features";
 import Hero from "@/components/sections/Hero/Hero";
 import Who from "@/components/sections/who/Who";
 
