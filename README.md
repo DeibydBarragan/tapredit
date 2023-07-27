@@ -35,4 +35,5 @@ Then, go to [http://localhost:3000](http://localhost:3000) in the browser and us
 ## Additionally this project uses:
 - [Framer motion](https://www.framer.com/motion/)
 - [React Icons](https://react-icons.github.io/react-icons)
+- [React scroll](https://www.npmjs.com/package/react-scroll)
 - [ESlint](https://eslint.org/)
