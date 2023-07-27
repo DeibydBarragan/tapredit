@@ -27,7 +27,7 @@ npm install
 3. Finally, run the following:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Then, go to [http://localhost:3000](http://localhost:3000) in the browser and use the app.
