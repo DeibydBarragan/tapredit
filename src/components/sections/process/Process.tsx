@@ -17,17 +17,16 @@ export default function Process({}: Props) {
         >
           Proceso
         </motion.h2>
-        <div className='flex flex-wrap gap-4 mt-8'>
+        <div className='flex flex-col md:grid md:grid-cols-2 gap-4 mt-8'>
           {steps.map((step, index) => (
-            <motion.div className={`card bg-primary ${index%2 !== 0 && 'bg-white text-primary'} w-80 md:w-96`} key={index}
+            <motion.div className={`card bg-primary ${index%2 !== 0 && 'bg-white/70 backdrop-blur-sm text-primary'} w-80 md:w-96`} key={index}
               {...flyUp}
-              transition={{ delay: 0.6 + index * 0.2}}
             >
               <figure>
                 <Image src={`/photos/process/${index + 1}.webp`} alt={step.title} width={400} height={200} />
               </figure>
               <div className="card-body">
-                <h3>{step.title}</h3>
+                <h3 className="text-xl">{step.title}</h3>
               </div>
             </motion.div>
           ))}
