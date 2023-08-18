@@ -1,5 +1,4 @@
 import Section from '@/components/containers/section/Section'
-import Image from 'next/image'
 import React from 'react'
 import { useState } from 'react';
 import { motion } from 'framer-motion';

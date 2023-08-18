@@ -14,14 +14,14 @@ export default function ProductData({}: Props) {
           {...fadeIn}
           transition={{ delay: 0.3}}
         >
-          Ficha técnica del producto
+          Acerca del producto
         </motion.h2>
         <div className='flex flex-col gap-4 mt-8'>
           {
             properties.map((property, index) => (
               <motion.div className='card bg-base-300/50 backdrop-blur-sm shadow-sm border text-neutral w-full' key={`property${index}`}
                 {...flyUp}
-                transition={{ delay: 0.3 + index * 0.2}}
+                transition={{ delay: index * 0.3}}
               >
                 <div className="card-body">
                   <h3 className='text-xl'>{property.name}</h3>
@@ -35,3 +35,4 @@ export default function ProductData({}: Props) {
     </Section>
   )
 }
+

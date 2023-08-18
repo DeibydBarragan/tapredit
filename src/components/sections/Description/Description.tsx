@@ -16,7 +16,7 @@ export default function Description({}: Props) {
         >
           ¿Qué es Tapredit?
         </motion.h2>
-        <motion.div className='flex flex-col sm:flex-row mt-10 gap-4 items-center'
+        <motion.div className='flex flex-col sm:flex-row gap-4 items-center'
           {...fadeIn}
           transition={{ delay: 0.4}}
         >
@@ -24,8 +24,11 @@ export default function Description({}: Props) {
             {...flyRight}
             transition={{ delay: 0.6}}
           >
-            <p className='text-lg font-semibold'>
-              Una tabla periódica didáctica en forma de maletín con sus mismas divisiones, en forma de
+            <motion.h3 className='text-2xl font-bold mt-4'>
+              Un proyecto de recuperación de residuos sólidos plásticos
+            </motion.h3>
+            <p className='text-lg font-semibold mt-4'>
+              Tapredit es una tabla periódica didáctica en forma de maletín con sus mismas divisiones, en forma de
               repisa donde se ubican los cubos de cada uno de los elementos que esta tiene, hechos con
               polipropileno recuperado; En la parte interna de la tapa del maletín se encuentran las fichas con
               la información específica de cada uno de los elementos y finalmente encontramos las convenciones de los datos y colores

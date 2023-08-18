@@ -15,7 +15,7 @@ export const featuresData: Feature[] = [
   },
   {
     title: 'Cubos de elementos',
-    description: 'Los cubos que representan cada uno de los elementos están hechos de polipropileno recuperado, lo que los hace resistentes y sostenibles',
+    description: 'Siendo un proyecto de emprendimiento circular, los cubos que representan cada uno de los elementos están hechos de polipropileno recuperado, lo que los hace resistentes y sostenibles',
     icon: <MdOutlineScience />
   }
 ]
