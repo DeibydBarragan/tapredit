@@ -19,7 +19,7 @@ export default function Process({}: Props) {
         </motion.h2>
         <div className='flex flex-col md:grid md:grid-cols-2 gap-4 mt-8'>
           {steps.map((step, index) => (
-            <motion.div className={`card bg-primary ${index%2 !== 0 && 'bg-white/70 backdrop-blur-sm text-primary'} w-80 md:w-96`} key={index}
+            <motion.div className={`card bg-primary ${index%2 !== 0 && 'bg-zinc-200/70 backdrop-blur-sm text-primary'} w-80 md:w-96`} key={index}
               {...flyUp}
             >
               <figure>
