@@ -15,14 +15,10 @@ export const navLinks: navLink[] = [
   },
   {
     to: 'data',
-    title: 'Ficha técnica',
+    title: 'Acerca del producto',
   },
   {
     to: 'gallery',
-    title: 'Evidencias',
-  },
-  {
-    to: 'contact',
-    title: 'Contacto',
+    title: 'Galería',
   }
 ]

@@ -19,7 +19,7 @@ export default function Gallery({}: Props) {
           transition={{ delay: 0.3}}
           className='mb-8'
         >
-          Evidencias
+          Galería
         </motion.h2>
         <Carousel 
           images={photos}

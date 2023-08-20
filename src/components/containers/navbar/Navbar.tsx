@@ -30,24 +30,30 @@ export default function Navbar({}: Props) {
           className='flex items-center gap-4 cursor-pointer'
           onClick={() => handleClickLink('hero', -120)}
           {...fadeIn}
-          transition={{ delay: 0.3}}
+          transition={{ delay: 0.2}}
         >
           <h2 className="text-2xl font-bold text-primary">TAPREDIT</h2>
           <Image src="/icon.webp" alt="logo" width={40} height={40} />
         </motion.a>
       </div>
-      <div className="hidden md:flex md:gap-4 xl:gap-8">
+      <div className="hidden md:flex md:gap-2 xl:gap-2">
         {navLinks.map((link, index) => (
           <motion.a key={index}
             className='btn btn-ghost text-gray-600 hover:bg-base-200 hover:text-neutral'
             onClick={() => handleClickLink(link.to)}
             {...fadeIn}
-            transition={{ delay: 0.3 * index}}
+            transition={{ delay: 0.15 * index}}
           >
             {link.title}
           </motion.a>
-        ))  
-        }
+        ))}
+          <motion.a
+            className='btn btn-neutral'
+            onClick={() => handleClickLink('contact')}
+            {...fadeIn}
+          >
+            Contacto
+          </motion.a>
       </div>
       <div className="flex-none md:hidden">
         <div className="relative">
@@ -74,6 +80,13 @@ export default function Navbar({}: Props) {
                       </a>
                     </li>
                   ))}
+                  <li className='text-neutral font-bold'>
+                    <a
+                      onClick={() => handleClickLink('contact')}
+                    >
+                      Contacto
+                    </a>
+                  </li>
                 </motion.ul>
             }
           </AnimatePresence>

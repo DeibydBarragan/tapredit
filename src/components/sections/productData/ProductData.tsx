@@ -2,7 +2,7 @@ import Section from '@/components/containers/section/Section'
 import React from 'react'
 import { properties } from './propertiesData.d'
 import { motion } from 'framer-motion';
-import { fadeIn, flyUp } from '@/anim/animations';
+import { fadeIn } from '@/anim/animations';
 
 type Props = {}
 
@@ -20,8 +20,7 @@ export default function ProductData({}: Props) {
           {
             properties.map((property, index) => (
               <motion.div className='card bg-base-300/50 backdrop-blur-sm shadow-sm border text-neutral w-full' key={`property${index}`}
-                {...flyUp}
-                transition={{ delay: index * 0.3}}
+                {...fadeIn}
               >
                 <div className="card-body">
                   <h3 className='text-xl'>{property.name}</h3>

@@ -1,5 +1,5 @@
 import Section from "@/components/containers/section/Section";
-import {fadeIn, flyRight, flyLeft} from "@/anim/animations";
+import {fadeIn} from "@/anim/animations";
 import {motion} from "framer-motion";
 import {MdEmail} from "react-icons/md";
 import {BsFillSendFill} from "react-icons/bs";
@@ -41,18 +41,24 @@ export default function Contact ({}: Props) {
           {...fadeIn}
           transition={{ delay: 0.3}}
         >
-          Contactanos
+          Contáctanos
         </motion.h2>
         <div className='flex flex-col md:grid md:grid-cols-2 gap-2 mt-8'>
-          <div className='flex flex-col'>
+          <motion.div className='flex flex-col' {...fadeIn} transition={{ delay: 0.4}}>
             <p className="text-lg font-semibold">
               Gracias por llegar hasta aquí, si deseas adquirir nuestro producto o tienes alguna duda o sugerencia puedes contactarnos a través del siguiente formulario. También puedes enviar un correo a tapredit.5@gmail.com
             </p>
             <a href="mailto:tapredit.5@gmail.com" className={'w-min'}>
               <MdEmail className='text-6xl text-white mt-4 hover:text-gray-200' />
             </a>
-          </div>
-          <form className='flex flex-col gap-4 text-neutral' onSubmit={handleSubmit} ref={form}>
+          </motion.div>
+          <motion.form
+            className='flex flex-col gap-4 text-neutral'
+            onSubmit={handleSubmit}
+            ref={form}
+            {...fadeIn}
+            transition={{ delay: 0.6}}
+          >
             <input
               className='input input-bordered input-primary w-full'
               name='email'
@@ -84,7 +90,7 @@ export default function Contact ({}: Props) {
                 : (<BsFillSendFill className='inline-block ml-2' />)
               }
             </button>
-          </form>
+          </motion.form>
         </div>
       </div>
     </Section>
