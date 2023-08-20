@@ -20,5 +20,9 @@ export const navLinks: navLink[] = [
   {
     to: 'gallery',
     title: 'Evidencias',
+  },
+  {
+    to: 'contact',
+    title: 'Contacto',
   }
 ]
