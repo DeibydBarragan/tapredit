@@ -9,7 +9,7 @@ import { numToArray } from '@/helpers/numToArray';
 type Props = {}
 
 export default function Gallery({}: Props) {
-  const [photos] = useState(numToArray(14))
+  const [photos] = useState(numToArray(18))
 
   return (
     <Section>
