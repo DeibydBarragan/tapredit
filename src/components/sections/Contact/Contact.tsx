@@ -19,7 +19,7 @@ export default function Contact ({}: Props) {
     try {
       await emailjs.sendForm(
         'service_06ucv1i',
-        'template_weiezvo',
+        'template_3bj04yn',
         form.current,
         'ujWGQJntsXHdicI8X'
       )
